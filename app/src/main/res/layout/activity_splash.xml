@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SplashActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg">
+
+        <ImageView
+            android:id="@+id/ivLogoPS13SI"
+            android:layout_width="@dimen/logoPS3SI_width"
+            android:layout_height="@dimen/logoPS3SI_height"
+            android:src="@drawable/logops13si"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/piSplash"
+            android:contentDescription="@string/desc_logoPS3SI" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/piSplash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginStart="@dimen/margin_side_progress_indicator"
+            android:layout_marginEnd="@dimen/margin_side_progress_indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/margin_top_progress_indicator"
+            app:indicatorColor="@color/white"
+            app:trackThickness="@dimen/progress_indicator_thickness"
+            app:trackCornerRadius="@dimen/progress_indicator_corner_radius"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

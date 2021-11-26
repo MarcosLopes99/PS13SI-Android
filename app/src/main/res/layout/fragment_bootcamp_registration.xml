@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BootcampRegistrationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBCRegistrationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bootcamp_subscription"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_title_registration"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top_screen_registration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvBCRegistrationText" />
+
+        <TextView
+            android:id="@+id/tvBCRegistrationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_title_text_registration"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            android:text="@string/registration_text"
+            android:textSize="@dimen/info_text_size"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBCRegistrationTitle"
+            app:layout_constraintBottom_toTopOf="@id/tilRegistrationName"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegistrationName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_form_title"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            app:layout_constraintTop_toBottomOf="@id/tvBCRegistrationText"
+            app:layout_constraintBottom_toTopOf="@id/tvDetailSelectBootCamp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/icon_business">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieRegistrationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name_registration"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvDetailSelectBootCamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_forms"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            android:text="@string/name_example_registration"
+            android:textSize="@dimen/example_text_size"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilRegistrationName"
+            app:layout_constraintBottom_toTopOf="@id/tilSelectBootCamp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSelectBootCamp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailSelectBootCamp"
+            app:layout_constraintBottom_toTopOf="@id/tilNumberPeople"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/icon_computer">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvSelectBootCamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:hint="@string/hint_select_bootcamp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNumberPeople"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_forms"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            app:layout_constraintTop_toBottomOf="@id/tilSelectBootCamp"
+            app:layout_constraintBottom_toTopOf="@id/tilRegistrationEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/icon_people">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieNumberPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number_people"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegistrationEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_forms"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            app:layout_constraintTop_toBottomOf="@id/tilNumberPeople"
+            app:layout_constraintBottom_toTopOf="@id/btSubmit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/icon_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieRegistrationEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email_registration"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilRegistrationEmail"
+            app:layout_constraintBottom_toTopOf="@id/btBackRegistration"
+            android:layout_marginTop="@dimen/margin_top_form_button_registration"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            android:text="@string/submit"
+            android:textStyle="bold"
+            android:textSize="@dimen/button_text"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/pink"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btBackRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_vertical_back_button"
+            app:layout_constraintTop_toBottomOf="@id/btSubmit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            app:icon="@drawable/icon_arrow_back"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/pink"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

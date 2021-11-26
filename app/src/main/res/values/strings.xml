@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">PS13SI</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_logoPS3SI">Logo PS3SI</string>
+    <string name="PS13SI">PS13SI</string>
+    <string name="hint_your_email">Digite seu e-mail</string>
+    <string name="hint_your_password">Digite sua senha</string>
+    <string name="login">Login</string>
+    <string name="info_text">Somos uma startup com um modelo de negócios inovadora com foco em treinar funcionários de pequenas, médias e grandes empresas.\nOrganizamos BootCamps com especialistas capacitados para treinar sua equipe nos mais diversos assuntos relacionados a TI, como User Experience, Desenvolvimento Back-End, Desenvolvimento Front-End, Machine Learning, Inteligência Artificial e mais!\n\nE-mail para contato:\nps13si@ps13si.com.br</string>
+    <string name="back_button">Botão voltar</string>
+    <string name="back">Voltar</string>
+    <string name="bootcamp_subscription">Inscrição BootCamp</string>
+    <string name="registration_text">Inscreva sua empresa em um de nossos BootCamps de TI!\nPreencha os dados abaixo e entraremos em contato com você dentro de 7 dias úteis para combinar outros detalhes:</string>
+    <string name="hint_name_registration">Digite o nome da empresa</string>
+    <string name="name_example_registration">Exemplo: Nome do BootCamp (Preço POR PESSOA)</string>
+    <string name="hint_select_bootcamp">Selecione o BootCamp</string>
+    <string name="hint_number_people">Digite o número de participantes</string>
+    <string name="hint_email_registration">Digite um e-mail para contato</string>
+    <string name="submit">Enviar</string>
+    <string name="field_empty_invalid">Campo vazio ou inválido</string>
+    <string name="our_bootcamps">Nossos BootCamps</string>
+    <string name="card_text_ux">Aprenda a projetar sites e aplicativos de uma maneira a facilitar o uso dos usuários e prover uma expêriencia visual agradável.</string>
+    <string name="see_more">Ver Mais…</string>
+    <string name="user_experience">User Experience</string>
+    <string name="back_end_development">Desenvolvimento Back-end</string>
+    <string name="card_backend_text">Aprenda a programar em linguagens como Java e Python e comece a desenvolver programas!</string>
+    <string name="front_end_development">Desenvolvimento Front-end</string>
+    <string name="card_dev_front_text">Aprenda a utilizar HTML, CSS e frameworks como Bootstrap e melhore o visual dos seus sites!</string>
+    <string name="mobile_development">Desenvolvimento Mobile</string>
+    <string name="card_text_dev_mobile">Aprenda a programar utilizando Kotlin e Flutter e faça suas próprias aplicações para dispositivos móveis!</string>
+    <string name="machine_learning">Machine Learning</string>
+    <string name="card_text_machine_learning">Aprenda técnicas como o Deep Learning e deixe seus sistemas mais autônomos e inteligentes!</string>
+    <string name="artificial_intelligence">Inteligência Artificial</string>
+    <string name="card_ai_text">Aprenda conceitos de Inteligência Artificial e entenda como fazer seus sistemas tomarem decisões próprias!</string>
+    <string name="exit">Sair</string>
+    <string name="schedule_your_bootcamp">Agende seu Bootcamp</string>
+    <string name="about_us">Sobre nós</string>
+    <string name="welcome_text_main">Bem-vindo(a) ao app da PS13SI!</string>
+    <string-array name="bootcamp_type">
+        <item>User Experience (R$ 50)</item>
+        <item>Desenvolvimento Back-end (R$ 100)</item>
+        <item>Desenvolvimento Front-end (R$ 75)</item>
+        <item>Desenvolvimento Mobile (R$ 85)</item>
+        <item>Machine Learning (R$ 10)</item>
+        <item>Inteligência Artificial (R$ 70)</item>
+    </string-array>
+</resources>

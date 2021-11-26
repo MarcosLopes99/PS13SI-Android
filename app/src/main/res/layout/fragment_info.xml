@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivInfoLogoPS13SI"
+            android:layout_width="@dimen/logoPS3SI_width"
+            android:layout_height="@dimen/logoPS3SI_height"
+            android:src="@drawable/logops13si"
+            android:layout_marginTop="@dimen/margin_top_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/desc_logoPS3SI" />
+
+        <TextView
+            android:id="@+id/tvInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PS13SI"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_title_PS3SI"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/margin_top_title_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivInfoLogoPS13SI"
+            app:layout_constraintBottom_toTopOf="@id/tvInfoText" />
+
+        <TextView
+            android:id="@+id/tvInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="@dimen/margin_screen_side_default"
+            android:layout_marginEnd="@dimen/margin_screen_side_default"
+            android:text="@string/info_text"
+            android:textSize="@dimen/info_text_size"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInfoTitle"
+            app:layout_constraintBottom_toTopOf="@id/btBackInfo"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btBackInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_top_default"
+            app:layout_constraintTop_toBottomOf="@id/tvInfoText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/back_button"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            app:icon="@drawable/icon_arrow_back"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/pink"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

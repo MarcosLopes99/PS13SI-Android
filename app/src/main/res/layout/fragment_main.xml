@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitleMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_banner_height"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/banner_main"
+            android:backgroundTint="@color/dark_pink99"
+            android:backgroundTintMode="src_over"
+            android:text="@string/welcome_text_main"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold"
+            android:textSize="@dimen/main_banner_text_size"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:id="@+id/btBootcampsMain"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent=".45"
+            android:layout_height="@dimen/buttons_main_height"
+            android:layout_margin="@dimen/main_buttons_margin"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleMain"
+            app:layout_constraintBottom_toTopOf="@id/btInfoMain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btRegistrationMain"
+            android:drawableTop="@drawable/icon_computer_big"
+            android:text="@string/our_bootcamps"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:backgroundTint="@color/pink"/>
+
+        <Button
+            android:id="@+id/btRegistrationMain"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent=".45"
+            android:layout_height="@dimen/buttons_main_height"
+            android:layout_margin="@dimen/main_buttons_margin"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleMain"
+            app:layout_constraintBottom_toTopOf="@id/btExitMain"
+            app:layout_constraintStart_toEndOf="@id/btBootcampsMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableTop="@drawable/icon_add_big"
+            android:text="@string/schedule_your_bootcamp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:backgroundTint="@color/pink"/>
+        <Button
+            android:id="@+id/btInfoMain"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent=".45"
+            android:layout_height="@dimen/buttons_main_height"
+            android:layout_margin="@dimen/main_buttons_margin"
+            app:layout_constraintTop_toBottomOf="@id/btBootcampsMain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btExitMain"
+            android:drawableTop="@drawable/icon_info_big"
+            android:text="@string/about_us"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:backgroundTint="@color/pink"/>
+
+        <Button
+            android:id="@+id/btExitMain"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent=".45"
+            android:layout_height="@dimen/buttons_main_height"
+            android:layout_margin="@dimen/main_buttons_margin"
+            app:layout_constraintTop_toBottomOf="@id/btRegistrationMain"
+            app:layout_constraintStart_toEndOf="@id/btInfoMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableTop="@drawable/icon_exit_big"
+            android:text="@string/exit"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:backgroundTint="@color/pink"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ps13si.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bootcampsFragment"
+        android:name="com.example.ps13si.BootcampsFragment"
+        android:label="fragment_bootcamps"
+        tools:layout="@layout/fragment_bootcamps" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.ps13si.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_bootcampRegistrationFragment"
+            app:destination="@id/bootcampRegistrationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_bootcampsFragment"
+            app:destination="@id/bootcampsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bootcampRegistrationFragment"
+        android:name="com.example.ps13si.BootcampRegistrationFragment"
+        android:label="fragment_bootcamp_registration"
+        tools:layout="@layout/fragment_bootcamp_registration" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.ps13si.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>
